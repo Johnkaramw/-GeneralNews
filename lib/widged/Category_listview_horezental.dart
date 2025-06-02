@@ -6,16 +6,35 @@ class Category_listview_horezental extends StatelessWidget {
   const Category_listview_horezental({
     super.key,
   });
-  final List<CategoryModelHor> category = const [
-    CategoryModelHor(image: 'assets/images/health.jpg', name: 'Health'),
-    CategoryModelHor(image: 'assets/images/sports.jpg', name: 'Sports'),
-    CategoryModelHor(image: 'assets/images/business.webp', name: 'Business'),
-    CategoryModelHor(image: 'assets/images/general.jpg', name: 'General'),
-    CategoryModelHor(image: 'assets/images/technology.jpg', name: 'Technology'),
-    CategoryModelHor(image: 'assets/images/science.png', name: 'Science'),
-  ];
   @override
   Widget build(BuildContext context) {
+    final List<CategoryModelHor> category = [
+      CategoryModelHor(
+        image: 'assets/images/health.jpg',
+        name: 'health',
+      ),
+      CategoryModelHor(
+        image: 'assets/images/sports.jpg',
+        name: 'Sports',
+      ),
+      CategoryModelHor(
+        image: 'assets/images/business.webp',
+        name: 'Business',
+      ),
+      CategoryModelHor(
+        image: 'assets/images/general.jpg',
+        name: 'General',
+      ),
+      CategoryModelHor(
+        image: 'assets/images/technology.jpg',
+        name: 'Technology',
+      ),
+      CategoryModelHor(
+        image: 'assets/images/science.png',
+        name: 'Science',
+      ),
+    ];
+
     return SizedBox(
       height: 120,
       child: ListView.builder(

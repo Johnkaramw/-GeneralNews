@@ -1,5 +1,6 @@
 class CategoryModelHor {
-  final image;
-  final name;
+  final String image;
+  final String name;
+
   const CategoryModelHor({required this.image, required this.name});
 }

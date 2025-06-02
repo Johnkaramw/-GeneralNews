@@ -1,5 +1,5 @@
 class ArticleModel {
   final String image;
-  final String titel;
-  ArticleModel({required this.image,required this.titel});
+  final String title;
+  ArticleModel({required this.image,required this.title});
 }
