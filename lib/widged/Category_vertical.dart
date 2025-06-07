@@ -13,7 +13,7 @@ class CategoryVertical extends StatelessWidget {
           height: 250,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: NetworkImage(articleModel.image),
+              image: NetworkImage(articleModel.image ?? ''),
               fit: BoxFit.fill,
             ),
             borderRadius: BorderRadius.circular(10),

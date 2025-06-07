@@ -12,10 +12,7 @@ class NewsService {
       List<dynamic> results = jsonData['results'];
       List<ArticleModel> articallist = [];
       for (var result in results) {
-        ArticleModel articleModel = ArticleModel(
-          image: result['image_url'] ?? '',
-          title: result['title'] ?? 'NO Title',
-        );
+        ArticleModel articleModel = ArticleModel.fromjson(result);
         articallist.add(articleModel);
       }
       return articallist;
